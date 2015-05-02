@@ -1,0 +1,2 @@
+# iOSSoftwareArchitecture
+一些简单的IOS软件架构
