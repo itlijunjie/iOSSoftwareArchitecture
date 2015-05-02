@@ -1,0 +1,11 @@
+*.xcworkspacedata
+
+*.xcuserstate
+
+*.xcscheme
+
+SimpleLayered/Net/Net.xcodeproj/xcuserdata/ljj.xcuserdatad/xcschemes/xcschememanagement.plist
+
+SimpleLayered/SimpleLayered/SimpleLayered.xcodeproj/xcuserdata/ljj.xcuserdatad/xcschemes/xcschememanagement.plist
+
+SimpleLayered/Logic/Logic.xcodeproj/xcuserdata/ljj.xcuserdatad/xcschemes/xcschememanagement.plist
