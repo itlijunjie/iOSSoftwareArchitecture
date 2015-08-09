@@ -1,15 +1,14 @@
 //
-//  Net.m
-//  Net
+//  CommonUtil.m
+//  CommonUtil
 //
-//  Created by lijunjie on 5/1/15.
-//  Copyright (c) 2015 lijunjie. All rights reserved.
+//  Created by lijunjie on 15/8/9.
+//  Copyright (c) 2015年 lijunjie. All rights reserved.
 //
 
-#import "Net.h"
 #import "CommonUtil.h"
 
-@implementation Net
+@implementation CommonUtil
 
 - (instancetype)init
 {

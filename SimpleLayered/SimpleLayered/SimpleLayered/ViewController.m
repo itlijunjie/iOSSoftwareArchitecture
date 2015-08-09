@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "Masonry.h"
+#import "LogicModelManager.h"
+#import "ProfileInterface.h"
 
 @interface ViewController ()
+{
+    UIButton *_btn;
+}
 
 @end
 
@@ -16,12 +22,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    _btn.backgroundColor = [UIColor redColor];
+    __unused id <ProfileInterface> profile = [[LogicModelManager share] getProfileModel];
+    [self.view addSubview:_btn];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)updateViewConstraints
+{
+    [super updateViewConstraints];
+    UIView *superView = self.view;
+    [_btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(superView);
+        make.width.equalTo(@(100));
+        make.height.equalTo(@(30));
+    }];
+}
+
+#pragma mark - Action
+
+- (void)btnAction:(id)sender
+{
+    NSLog(@"%@_%s",[self class],__FUNCTION__);
 }
 
 @end

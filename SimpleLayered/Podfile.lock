@@ -1,0 +1,13 @@
+PODS:
+  - Masonry (0.5.3)
+  - RegexKitLite (4.0)
+
+DEPENDENCIES:
+  - Masonry (= 0.5.3)
+  - RegexKitLite (= 4.0)
+
+SPEC CHECKSUMS:
+  Masonry: 9f515466afe48632562342a40a1c224071a1a022
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+
+COCOAPODS: 0.37.2

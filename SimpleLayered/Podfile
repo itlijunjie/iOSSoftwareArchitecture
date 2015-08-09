@@ -1,16 +1,30 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
 workspace 'SimpleLayered'
 xcodeproj 'SimpleLayered/SimpleLayered.xcodeproj'
 #pod 'RegexKitLite', '4.0'
 #pod 'FMDB', '2.4'
 #pod 'Masonry','0.5.3'
-target :Net do
-xcodeproj 'Net/Net.xcodeproj'
-#pod 'SimpleLayered', :path => './'
-pod 'RegexKitLite', '4.0'
+target :SimpleLayered do
+    xcodeproj 'SimpleLayered/SimpleLayered.xcodeproj'
+    #pod 'SimpleLayered', :path => './'
+    pod 'Masonry','0.5.3'
 end
 
 target :Logic do
-xcodeproj 'Logic/Logic.xcodeproj'
-#pod 'SimpleLayered', :path => './'
-pod 'Masonry','0.5.3'
+    xcodeproj 'Logic/Logic.xcodeproj'
+    #pod 'SimpleLayered', :path => './'
+    pod 'Masonry','0.5.3'
+end
+
+target :Net do
+    xcodeproj 'Net/Net.xcodeproj'
+    #pod 'SimpleLayered', :path => './'
+    pod 'RegexKitLite', '4.0'
+end
+
+target :CommonUtil do
+    xcodeproj 'CommonUtil/CommonUtil.xcodeproj'
+    #pod 'SimpleLayered', :path => './'
+    pod 'Masonry','0.5.3'
 end
